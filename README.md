@@ -12,7 +12,7 @@ The file will be generated in `SURPRISE` folder :)
 
 ## How to add data for other semesters?
 
-Every subject and group has its own unique url:
+Every subject and group has its own unique url which has unique id with a grourp number:
 
 https://web.usos.agh.edu.pl/kontroler.php?_action=katalog2/przedmioty/pokazZajecia&zaj_cyk_id=94682&gr_nr=8
 
@@ -25,7 +25,7 @@ In order to add data for other semesters you need the id of current subject and 
 }
 ```
 
-Once you have this for all subjects go to the `./driver/data,js` and insert a new Object to the `CURRENT_SEM_DATA` (for example `DATA_SEM_III`).
+Once you have this for all subjects go to the `./driver/data.js` and insert a new Object to the `CURRENT_SEM_DATA` (for example `DATA_SEM_III`).
 
 `DATA_SEM_III` should have this kind of pattern for the values above:
 
