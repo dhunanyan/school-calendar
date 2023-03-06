@@ -23,5 +23,36 @@ export const updateSubjectName = (subjectName) => {
     return "TKiK";
   }
 
+  if (subjectName === "Rachunek prawdopodobieństwa i statystyka") {
+    return "Rachunek";
+  }
+
+  if (subjectName === "Matematyka dyskretna") {
+    return "Dyskretna";
+  }
+
+  if (subjectName === "Teoria grafów") {
+    return "Grafy";
+  }
+
+  if (subjectName === "Podstawy programowania 2") {
+    return "C++";
+  }
+
+  if (subjectName === "Algorytmy i struktury danych") {
+    return "Algorytmy";
+  }
+
+  if (subjectName === "Podstawy grafiki komputerowej") {
+    return "Grafika";
+  }
+
+  if (subjectName === "Wprowadzenie do systemów inteligentnych") {
+    return "WDSI";
+  }
+
+  if (subjectName === "Badania operacyjne") {
+    return "BO";
+  }
   return subjectName;
 };
