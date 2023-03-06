@@ -49,8 +49,8 @@ Next you go to ./scripts/ and create a bash script `start_sem_iii.sh` which need
 ```bash
 #!/bin/bash
 
-SEM=DATA_SEM_III
-CALENDAR=CALENDAR_SEMESTR_III
+SEM=DATA_SEM_III #this is the name of variables with ids and group numbers
+CALENDAR=CALENDAR_SEMESTR_III #this is the output file name
 
 SEM=$SEM yarn wdio >> calendar.data.csv
 CALENDAR=$CALENDAR sh ./scripts/start.sh
