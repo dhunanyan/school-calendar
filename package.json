@@ -12,7 +12,8 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
-    "start": "sh ./scripts/start.sh",
-    "install-pip-and-modules": "sh ./scripts/install.sh"
+    "install-pip-and-modules": "sh ./scripts/install.sh",
+    "start:sem-ii": "sh ./scripts/start_sem_ii.sh",
+    "start:sem-iv": "sh ./scripts/start_sem_iv.sh"
   }
 }

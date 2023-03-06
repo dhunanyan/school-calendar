@@ -1,5 +1,4 @@
 #!/bin/bash
-yarn wdio >> calendar.data.csv
 
 START_LINE=$(awk '/\[0-0\]  id/{ print NR; exit }' ./calendar.data.csv)
 tail -n +$START_LINE calendar.data.csv > ./calendar.data.csv.t
@@ -18,4 +17,6 @@ mv ./calendar.data.csv{.t,}
 tail -c +2 calendar.data.csv > ./calendar.data.csv.t
 mv ./calendar.data.csv{.t,}
 
-python calendar/create_event.py
+CALENDAR=$CALENDAR python calendar/create_event.py
+
+rm calendar.data.csv

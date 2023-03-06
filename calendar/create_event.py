@@ -8,6 +8,7 @@ import csv
 cal = Calendar()
 cal.add('prodid', '-//My calendar product//example.com//')
 cal.add('version', '2.0')
+output_file_name = os.getenv('CALENDAR')
 
 with open('calendar.data.csv',  encoding='utf-8') as csv_f:
     reader = csv.reader(csv_f, delimiter=';')
@@ -61,6 +62,6 @@ with open('calendar.data.csv',  encoding='utf-8') as csv_f:
         print("Folder already exists")
     else:
         print("Folder was created")
-    f = open(os.path.join(directory, 'semestr_iv.ics'), 'wb')
+    f = open(os.path.join(directory, f'{output_file_name}.ics'), 'wb')
     f.write(cal.to_ical())
     f.close()

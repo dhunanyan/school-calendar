@@ -1,11 +1,12 @@
 import CurrentPage from "../pageobjects/current.page.js";
-import { DATA_SEM_IV } from "../data.js";
+import { CURRENT_SEM_DATA } from "../data.js";
 import { updateSubjectName } from "../helpers.js";
 
 let csv = "id;title;teacher;date;startTime;endTime;location;group\n";
 let outputId = 0;
+
 describe("My Login application", () => {
-  DATA_SEM_IV.forEach((DATA, i) => {
+  CURRENT_SEM_DATA[process.env.SEM].forEach((DATA, i) => {
     it(`Get data from nth subject: (${i})`, async () => {
       await CurrentPage.open(DATA[0], DATA[1]);
 
