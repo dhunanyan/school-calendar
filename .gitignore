@@ -8,4 +8,4 @@ SURPRISE
 .env
 yarn-debug.log*
 yarn-error.log*
-logs
+logs/
