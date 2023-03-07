@@ -132,7 +132,23 @@ const DATA_SEM_II = [
   [94117, 4],
 ];
 
+const DATA_DZIEKANKA = [
+  [93570, 1],
+  [93939, 1],
+  [93961, 1],
+  [93840, 1],
+  [93809, 1],
+  [93680, 1],
+
+  [94799, 4],
+  [95043, 1],
+  [94484, 2],
+
+  [94557, 2],
+];
+
 export const CURRENT_SEM_DATA = {
   DATA_SEM_II,
   DATA_SEM_IV,
+  DATA_DZIEKANKA,
 };

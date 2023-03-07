@@ -17,7 +17,7 @@ mv ./calendar.data.csv{.t,}
 tail -c +2 calendar.data.csv > ./calendar.data.csv.t
 mv ./calendar.data.csv{.t,}
 
-alias python=python3
+# alias python=python3
 CALENDAR=$CALENDAR python calendar/create_event.py
 
 rm calendar.data.csv
